@@ -835,6 +835,14 @@ video {
   transition-duration: 700ms;
 }
 
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -907,6 +915,11 @@ video {
 
 .hover\:shadow-sky-300:hover {
   --tw-shadow-color: #7dd3fc;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-red-500:hover {
+  --tw-shadow-color: #ef4444;
   --tw-shadow: var(--tw-shadow-colored);
 }
 

@@ -35,7 +35,7 @@ function Card() {
 
   return (
     <div className='w-full'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5  card-selector'>
+      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5 transition ease-in-out duration-100 hover:shadow-black-700 card-selector'>
         <div className=''>
           <img
             src={profile}
