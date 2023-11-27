@@ -3,9 +3,39 @@ import profile from '../images/el-nano.jpg';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function Card() {
+  const card = document.querySelector('.card-selector');
+  const motionMatchMedia = window.matchMedia('(prefers-reduced-motion)');
+  const THRESHOLD = 15;
+
+  function handleHover(e) {
+    if (card) {
+      const { clientX, clientY, currentTarget } = e;
+      const { clientWidth, clientHeight, offsetLeft, offsetTop } =
+        currentTarget;
+
+      const horizontal = (clientX - offsetLeft) / clientWidth;
+      const vertical = (clientY - offsetTop) / clientHeight;
+      const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+      const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+
+      card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+    }
+  }
+
+  function resetStyles(e) {
+    if (card) {
+      card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+    }
+  }
+
+  if (card && !motionMatchMedia.matches) {
+    card.addEventListener('mousemove', handleHover);
+    card.addEventListener('mouseleave', resetStyles);
+  }
+
   return (
     <div className='w-full'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5'>
+      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5  card-selector'>
         <div className=''>
           <img
             src={profile}
@@ -14,7 +44,9 @@ function Card() {
           />
         </div>
         <div className='text-center mt-5'>
-          <p className='text-xl sm:text-2xl text-gray-900'>Fernando Alonso</p>
+          <p className='text-xl sm:text-2xl text-gray-900 font-bold'>
+            Fernando Alonso
+          </p>
           <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
             "el Nano "
           </p>
