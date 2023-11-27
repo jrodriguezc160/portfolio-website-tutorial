@@ -889,6 +889,11 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.hover\:shadow-sky-300:hover {
+  --tw-shadow-color: #7dd3fc;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 @media (min-width: 640px) {
   .sm\:m-2 {
     margin: 0.5rem;
