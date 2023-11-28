@@ -1,37 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import profile from '../images/el-nano.jpg';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function Card() {
-  const card = document.querySelector('.card-selector');
-  const motionMatchMedia = window.matchMedia('(prefers-reduced-motion)');
-  const THRESHOLD = 5;
+  useEffect(() => {
+    const card = document.querySelector('.card-selector');
+    const motionMatchMedia = window.matchMedia('(prefers-reduced-motion)');
+    const THRESHOLD = 5;
 
-  function handleHover(e) {
-    if (card) {
-      const { clientX, clientY, currentTarget } = e;
-      const { clientWidth, clientHeight, offsetLeft, offsetTop } =
-        currentTarget;
+    function handleHover(e) {
+      if (card) {
+        const { clientX, clientY, currentTarget } = e;
+        const { clientWidth, clientHeight, offsetLeft, offsetTop } =
+          currentTarget;
 
-      const horizontal = (clientX - offsetLeft) / clientWidth;
-      const vertical = (clientY - offsetTop) / clientHeight;
-      const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
-      const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+        const horizontal = (clientX - offsetLeft) / clientWidth;
+        const vertical = (clientY - offsetTop) / clientHeight;
+        const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+        const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
 
-      card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+        card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+      }
     }
-  }
 
-  function resetStyles(e) {
-    if (card) {
-      card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+    function resetStyles(e) {
+      if (card) {
+        card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+      }
     }
-  }
 
-  if (card && !motionMatchMedia.matches) {
-    card.addEventListener('mousemove', handleHover);
-    card.addEventListener('mouseleave', resetStyles);
-  }
+    if (card && !motionMatchMedia.matches) {
+      card.addEventListener('mousemove', handleHover);
+      card.addEventListener('mouseleave', resetStyles);
+    }
+
+    // Cleanup event listeners on component unmount
+    return () => {
+      if (card) {
+        card.removeEventListener('mousemove', handleHover);
+        card.removeEventListener('mouseleave', resetStyles);
+      }
+    };
+  }, []);
 
   return (
     <div className='w-full'>
