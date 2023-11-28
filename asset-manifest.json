@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-website-tutorial/static/css/main.4e810509.css",
-    "main.js": "/portfolio-website-tutorial/static/js/main.09830358.js",
+    "main.css": "/portfolio-website-tutorial/static/css/main.d8e7bbc5.css",
+    "main.js": "/portfolio-website-tutorial/static/js/main.6a1b4d4b.js",
     "static/media/el-nano.jpg": "/portfolio-website-tutorial/static/media/el-nano.a071f63d37dd799eb81c.jpg",
     "index.html": "/portfolio-website-tutorial/index.html",
-    "main.4e810509.css.map": "/portfolio-website-tutorial/static/css/main.4e810509.css.map",
-    "main.09830358.js.map": "/portfolio-website-tutorial/static/js/main.09830358.js.map"
+    "main.d8e7bbc5.css.map": "/portfolio-website-tutorial/static/css/main.d8e7bbc5.css.map",
+    "main.6a1b4d4b.js.map": "/portfolio-website-tutorial/static/js/main.6a1b4d4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e810509.css",
-    "static/js/main.09830358.js"
+    "static/css/main.d8e7bbc5.css",
+    "static/js/main.6a1b4d4b.js"
   ]
 }
