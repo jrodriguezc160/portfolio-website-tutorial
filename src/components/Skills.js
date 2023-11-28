@@ -19,7 +19,7 @@ function Skills() {
       </p>
 
       <div className='flex flex-wrap justify-center pt-2'>
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-orchid hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-[#DA70D675] hover:shadow-xl hover:scale-110'>
           <FaFigma
             color='orchid'
             className='mx-auto text-4xl'
@@ -29,7 +29,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-slate-500 hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-slate-200 hover:shadow-xl hover:scale-110'>
           <FaGithub
             color='slategrey'
             className='mx-auto text-4xl'
@@ -39,7 +39,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-orange-500 hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-orange-200 hover:shadow-xl hover:scale-110'>
           <FaHtml5
             color='darkorange'
             className='mx-auto text-4xl'
@@ -49,7 +49,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-blue-700 hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-blue-200 hover:shadow-xl hover:scale-110'>
           <FaCss3
             color='blue'
             className='mx-auto text-4xl'
@@ -59,7 +59,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-yellow-300 hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-yellow-200 hover:shadow-xl hover:scale-110'>
           <FaJs
             color='gold'
             className='mx-auto text-4xl'
@@ -69,7 +69,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className='small-card-selector flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-2xl rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-sky-300 hover:scale-110'>
+        <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-sky-200 hover:shadow-xl hover:scale-110'>
           <FaReact
             color='skyblue'
             className='mx-auto text-4xl'
