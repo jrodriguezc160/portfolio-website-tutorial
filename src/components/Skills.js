@@ -11,10 +11,10 @@ import {
 function Skills() {
   return (
     <div
-      className='max-w-4xl mx-auto justify-center py-24'
+      className='max-w-4xl mx-auto justify-center mb-24'
       id='tech'
     >
-      <p className='text-2xl text-black text-center sm:text-4xl pt-12 font-bold'>
+      <p className='text-2xl text-black text-center sm:text-4xl pt-24 font-bold'>
         Tech I use
       </p>
 
