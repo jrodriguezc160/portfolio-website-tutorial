@@ -1,14 +1,14 @@
-import React from 'react';
-import {
-  FaCss3,
-  FaFigma,
-  FaGithub,
-  FaHtml5,
-  FaJs,
-  FaReact,
-} from 'react-icons/fa';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Projects() {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
+
   return (
     <div
       className='max-w-4xl mx-auto justify-center py-12'
@@ -19,29 +19,39 @@ function Projects() {
       </p>
 
       <div class='grid grid-cols-1 gap-x-0 gap-y-12 sm:gap-x-12 sm:grid-cols-3 mt-8'>
-        <a
-          href='youtube.com'
-          className='group relative flex h-56 w-full items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl'
+        <div
+          className='group relative h-56 w-fullsm:colspan:1'
+          data-aos='fade-right'
+          data-aos-duration='800'
+          data-aos-delay='200'
         >
-          <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
-            <img
-              src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
-              loading='lazy'
-              alt='Weather'
-              class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
-            />
-          </div>
+          <a
+            href='youtube.com'
+            className='h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg'
+          >
+            <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
+              <img
+                src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
+                loading='lazy'
+                alt='Weather'
+                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+              />
+            </div>
 
-          <span className='relative ml-6 mb-3 inline-block text-sm md:ml-6 md:text-lg'>
-            Weather app
-          </span>
-        </a>
+            <span className='relative ml-6 mb-3 inline-block text-sm md:ml-6 md:text-lg'>
+              Weather app
+            </span>
+          </a>
+        </div>
 
         <a
           href='https://jrodriguezc160.github.io/react-movie-searcher'
           target='_blank'
           rel='noreferrer'
           className='group relative flex h-56 items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl col-span-2'
+          data-aos='fade-left'
+          data-aos-duration='1000'
+          data-aos-delay='200'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
@@ -60,6 +70,9 @@ function Projects() {
         <a
           href='youtube.com'
           className='group relative flex h-56 items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl col-span-2'
+          data-aos='fade-right'
+          data-aos-duration='1200'
+          data-aos-delay='200'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
@@ -78,6 +91,9 @@ function Projects() {
         <a
           href='youtube.com'
           className='group relative flex h-56 w-full items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl'
+          data-aos='fade-left'
+          data-aos-duration='1400'
+          data-aos-delay='200'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img

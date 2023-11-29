@@ -11,14 +11,14 @@ import {
 function Skills() {
   return (
     <div
-      className='max-w-4xl mx-auto justify-center py-12'
+      className='max-w-4xl mx-auto justify-center py-36'
       id='tech'
     >
-      <p className='text-2xl text-black text-center sm:text-4xl pt-4 font-bold'>
+      <p className='text-2xl text-black text-center sm:text-4xl pt-12 font-bold'>
         Tech I use
       </p>
 
-      <div className='flex flex-wrap justify-center pt-2'>
+      <div className='flex flex-wrap justify-center pt-6'>
         <div className='flex flex-col w-40 p-10 m-6 overflow-hidden bg-white shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-[#DA70D675] hover:shadow-xl hover:scale-110'>
           <FaFigma
             color='orchid'

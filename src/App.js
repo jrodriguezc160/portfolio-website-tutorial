@@ -31,8 +31,21 @@ function App() {
       >
         <About />
       </div>
-      <Skills />
-      <Projects />
+
+      <div
+        data-aos='fade-up'
+        data-aos-duration='800'
+        className='h-full'
+      >
+        <Skills />
+      </div>
+
+      <div
+        data-aos='fade-up'
+        data-aos-duration='800'
+      >
+        <Projects />
+      </div>
       <ContactMe />
       <Footer />
     </div>
