@@ -18,10 +18,10 @@ function Projects() {
         Projects
       </p>
 
-      <div class='grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 mt-8'>
+      <div class='grid grid-cols-1 gap-x-0 gap-y-12 sm:gap-x-12 sm:grid-cols-3 mt-8'>
         <a
           href='youtube.com'
-          className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-white shadow-lg md:h-80 transition duration-500 hover:scale-105'
+          className='group relative flex h-56 w-full items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
@@ -38,8 +38,10 @@ function Projects() {
         </a>
 
         <a
-          href='youtube.com'
-          className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-white shadow-lg md:h-80 transition duration-500 hover:scale-105 col-span-2'
+          href='https://jrodriguezc160.github.io/react-movie-searcher'
+          target='_blank'
+          rel='noreferrer'
+          className='group relative flex h-56 items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl col-span-2'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
@@ -57,7 +59,7 @@ function Projects() {
 
         <a
           href='youtube.com'
-          className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-white shadow-lg md:h-80 transition duration-500 hover:scale-105 col-span-2'
+          className='group relative flex h-56 items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl col-span-2'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
@@ -75,23 +77,21 @@ function Projects() {
 
         <a
           href='youtube.com'
-          className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-white shadow-lg md:h-80 transition duration-500 hover:scale-105'
+          className='group relative flex h-56 w-full items-end overflow-hidden rounded-xl bg-white shadow-lg sm:colspan:1 transition duration-500 hover:scale-105 hover:shadow-2xl'
         >
           <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
             <img
-              src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
+              src='https://eshop.macsales.com/blog/wp-content/uploads/2020/07/StickiesIcon-1-284x284.png'
               loading='lazy'
               alt='Weather'
-              class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+              class='absolute inset-0 h-full w-90% object-cover object-center mx-auto transition duration-500 group-hover:scale-105'
             />
           </div>
 
           <span className='relative ml-6 mb-3 inline-block text-sm md:ml-6 md:text-lg'>
-            Weather app
+            Notes app
           </span>
         </a>
-
-        
       </div>
     </div>
   );
