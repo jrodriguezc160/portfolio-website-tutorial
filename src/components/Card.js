@@ -54,7 +54,7 @@ function Card() {
           />
         </div>
         <div className='text-center mt-5'>
-          <p className='text-xl sm:text-2xl text-gray-900 font-bold'>
+          <p className='text-4xl sm:text-3xl text-gray-900 font-bold'>
             Fernando Alonso
           </p>
           <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>

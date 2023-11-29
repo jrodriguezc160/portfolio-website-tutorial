@@ -19,7 +19,7 @@ function Projects() {
       </p>
 
       {/* Grid */}
-      <div class='grid grid-cols-1 gap-x-0 gap-y-12 sm:gap-x-12 sm:grid-cols-3 mt-8'>
+      <div class='grid grid-cols-1 gap-x-0 gap-y-6 sm:gap-x-6 sm:grid-cols-3 mt-8'>
         <div
           className='group relative h-56 w-full sm:colspan:1'
           data-aos='fade-right'
@@ -30,13 +30,15 @@ function Projects() {
             href='youtube.com'
             className='h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg'
           >
-            {' '}
-            <img
-              src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
-              loading='lazy'
-              alt='Weather'
-              class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
-            />
+            <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
+              <img
+                src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
+                loading='lazy'
+                alt='Weather'
+                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+              />
+            </div>
+
             <span className='relative ml-6 mb-3 inline-block text-sm md:ml-6 md:text-lg'>
               Weather app
             </span>
