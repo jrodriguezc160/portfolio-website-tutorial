@@ -30,15 +30,13 @@ function Projects() {
             href='youtube.com'
             className='h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg'
           >
-            <div className='absolute inset-4 mb-8 rounded-md overflow-hidden'>
-              <img
-                src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
-                loading='lazy'
-                alt='Weather'
-                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
-              />
-            </div>
-
+            {' '}
+            <img
+              src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
+              loading='lazy'
+              alt='Weather'
+              class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+            />
             <span className='relative ml-6 mb-3 inline-block text-sm md:ml-6 md:text-lg'>
               Weather app
             </span>
