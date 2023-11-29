@@ -44,7 +44,7 @@ function Card() {
   }, []);
 
   return (
-    <div className='w-full'>
+    <div className='w-full pt-8'>
       <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl'>
         <div className=''>
           <img
