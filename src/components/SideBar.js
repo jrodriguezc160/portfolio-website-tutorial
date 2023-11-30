@@ -1,5 +1,13 @@
-import React from 'react';
-import { FiFolder, FiHome, FiSun, FiTool, FiUser } from 'react-icons/fi';
+import React, { useState, useEffect } from 'react';
+import {
+  FiFolder,
+  FiHome,
+  FiMoon,
+  FiSun,
+  FiSunset,
+  FiTool,
+  FiUser,
+} from 'react-icons/fi';
 
 function SideBar() {
   const handleScroll = (targetId) => {
@@ -12,7 +20,7 @@ function SideBar() {
 
   return (
     <div className='absolute z-10 flex flex-col h-screen'>
-      <div className='fixed left-4 top-4 bottom-4 w-12 flex flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl'>
+      <div className='fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl'>
         <SideBarIcon
           icon={<FiHome />}
           text='Home'
@@ -41,8 +49,18 @@ function SideBar() {
           onClick={() => handleScroll('contact')}
         />
 
-        <div className='sidebar-icon mt-auto mb-1'>
-          <FiSun />
+        <div className='flex flex-col m-auto mb-1 w-fit  rounded-3xl bg-gray-50'>
+          <div className='sidebar-icon mode active mt-0' onClick={() => changeMode("sun")}>
+            <FiSun />
+          </div>
+
+          <div className='sidebar-icon mode' onClick={() => changeMode("dawn")}>
+            <FiSunset />
+          </div>
+
+          <div className='sidebar-icon mode mb-0' onClick={() => changeMode("moon")}>
+            <FiMoon />
+          </div>
         </div>
       </div>
     </div>
@@ -62,5 +80,24 @@ const SideBarIcon = ({ icon, text = 'tooltip 💡', targetId, onClick }) => (
     <span className='sidebar-tooltip group-hover:scale-100'>{text}</span>
   </a>
 );
+
+const changeMode= (mode) => {
+  switch (mode) {
+    case "sun":
+      
+      break;
+  
+    case "dawn":
+      
+      break;
+  
+    case "moon":
+      
+      break;
+
+    default:
+      break;
+  }
+}
 
 export default SideBar;
