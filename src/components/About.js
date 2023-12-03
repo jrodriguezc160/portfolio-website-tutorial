@@ -18,7 +18,7 @@ function About({ mode }) {
         />
       </p>
 
-      <p className={`text-base sm:xl text-center ${mode !== "sun" ? "text-gray-300" : "text-gray-600"} leading-relaxed mt-4`}>
+      <p className={`text-base sm:xl text-center ${mode !== "sun" ? "text-gray-100" : "text-gray-600"} leading-relaxed mt-4`}>
         I'm a passionate <b>web developer</b> and <b>graphic designer</b> that
         loves creating unique experiences on the internet. I combine my skills
         in design with my experience as a developer to craft beautiful and

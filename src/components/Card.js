@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import profile from '../images/profile.jpg';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React, { useEffect } from "react";
+import profile from "../images/profile.jpg";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-function Card() {
+function Card({ mode = "sun"}) {
   useEffect(() => {
-    const card = document.querySelector('.card-selector');
-    const motionMatchMedia = window.matchMedia('(prefers-reduced-motion)');
+    const card = document.querySelector(".card-selector");
+    const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
     const THRESHOLD = 5;
 
     function handleHover(e) {
@@ -30,63 +30,67 @@ function Card() {
     }
 
     if (card && !motionMatchMedia.matches) {
-      card.addEventListener('mousemove', handleHover);
-      card.addEventListener('mouseleave', resetStyles);
+      card.addEventListener("mousemove", handleHover);
+      card.addEventListener("mouseleave", resetStyles);
     }
 
     // Cleanup event listeners on component unmount
     return () => {
       if (card) {
-        card.removeEventListener('mousemove', handleHover);
-        card.removeEventListener('mouseleave', resetStyles);
+        card.removeEventListener("mousemove", handleHover);
+        card.removeEventListener("mouseleave", resetStyles);
       }
     };
   }, []);
 
   return (
-    <div className='w-full pt-8'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-primary shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl'>
-        <div className=''>
+    <div className="w-full pt-8">
+      <div
+        className={`flex flex-col justify-center max-w-xs mx-auto ${
+          mode !== "sun" ? (mode === "dawn" ? "bg-emerald-200" : "bg-[#181818] backdrop-blur-sm") : "bg-white"
+        } shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl`}
+      >
+        <div className="">
           <img
             src={profile}
-            alt='profile'
-            className='w-32 mx-auto shadow-xl rounded-full drop-shadow-sm'
+            alt="profile"
+            className="w-32 mx-auto shadow-xl rounded-full drop-shadow-sm"
           />
         </div>
-        <div className='text-center mt-5'>
-          <p className='text-4xl sm:text-3xl text-gray-900 font-bold'>
+        <div className="text-center mt-5">
+          <p className={`text-4xl sm:text-3xl ${mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-gray-900"} font-bold`}>
             Javier Rodríguez
           </p>
-          <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
+          <p className={`text-xs sm:text-base ${mode !== "sun" ? (mode === "dawn" ? "text-gray-800 border-emerald-300" : "text-gray-600") : "text-gray-600"} pt-2 pb-4 px-5 w-auto inline-block border-b-2`}>
             Web Developer + Designer
           </p>
 
-          <div className='flex align-center justify-center mt-4'>
+          <div className="flex align-center justify-center mt-4">
             <a
-              className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white 
-              transition ease-in-out duration-700'
-              href='https://github.com/jrodriguezc160'
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white 
+              transition ease-in-out duration-700"
+              href="https://github.com/jrodriguezc160"
             >
               <FaGithub />
-              <span className='sr-only'>GitHub</span>
+              <span className="sr-only">GitHub</span>
             </a>
 
             <a
-              className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-800 hover:bg-blue-800 rounded-full hover:text-white 
-              transition ease-in-out duration-700'
-              href='https://github.com/jrodriguezc160'
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-800 hover:bg-blue-800 rounded-full hover:text-white 
+              transition ease-in-out duration-700"
+              href="https://github.com/jrodriguezc160"
             >
               <FaLinkedin />
-              <span className='sr-only'>LinkedIn</span>
+              <span className="sr-only">LinkedIn</span>
             </a>
 
             <a
-              className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-sky-400 hover:bg-sky-400 rounded-full hover:text-white 
-              transition ease-in-out duration-700'
-              href='https://github.com/jrodriguezc160'
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-sky-400 hover:bg-sky-400 rounded-full hover:text-white 
+              transition ease-in-out duration-700"
+              href="https://github.com/jrodriguezc160"
             >
               <FaTwitter />
-              <span className='sr-only'>Twitter</span>
+              <span className="sr-only">Twitter</span>
             </a>
           </div>
         </div>
