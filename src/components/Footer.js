@@ -47,7 +47,7 @@ function Footer() {
           <a
             className='text-blue-500 hover:underline'
             href='mailto:jrcortes02102005@gmail.com'
-          >el Nano</a>
+          >Javier Rodríguez Cortés</a>
         </p>
       </div>
     </div>

@@ -35,38 +35,6 @@
   display: inline-block;
 }
 
-@layer base {
-  :root {
-    --bg-primary: whitesmoke;
-    --bg-secondary: white;
-    --bg-tertiary: lightgrey;
-
-    --text-primary: black;
-    --text-secondary: grey;
-    --text-tertiary: blue;
-  }
-
-  .dawn {
-    --bg-primary: #381eac;
-    --bg-secondary: #7d6ad1;
-    --bg-tertiary: #aea1ec;
-
-    --text-primary: whitesmoke;
-    --text-secondary: lightgrey;
-    --text-tertiary: #ecdaa1;
-  }
-
-  .moon {
-    --bg-primary: #080808;
-    --bg-secondary: #282828;
-    --bg-tertiary: #484848;
-
-    --text-primary: whitesmoke;
-    --text-secondary: lightgrey;
-    --text-tertiary: grey;
-  }
-}
-
 @layer components {
   .sidebar-icon {
     @apply relative flex items-center justify-center h-10 w-10 mt-1 md:mx-auto my-1 ml-1
@@ -88,4 +56,16 @@
   .active {
     @apply bg-gray-100 shadow-sm;
   }
+}
+
+.dawn-mode {
+  @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
+}
+
+.moon-mode {
+  @apply bg-gray-800 text-white;
+}
+
+.sun-mode {
+  @apply bg-white text-black;
 }

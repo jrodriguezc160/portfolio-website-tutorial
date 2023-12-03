@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   FiFolder,
   FiHome,
@@ -7,58 +7,92 @@ import {
   FiSunset,
   FiTool,
   FiUser,
-} from 'react-icons/fi';
+} from "react-icons/fi";
 
-function SideBar() {
+function SideBar({ mode, changeMode }) {
   const handleScroll = (targetId) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
+  const changeMode = (newMode, setMode) => {
+    console.log("Changing mode...");
+    const elementsChanging = document.querySelector("[data-mode]");
+
+    switch (newMode) {
+      case "sun":
+        elementsChanging.classList.remove("dawn-mode", "moon-mode");
+        elementsChanging.classList.add("sun-mode");
+        break;
+      case "dawn":
+        elementsChanging.classList.remove("sun-mode", "moon-mode");
+        elementsChanging.classList.add("dawn-mode");
+        break;
+      case "moon":
+        elementsChanging.classList.remove("sun-mode", "dawn-mode");
+        elementsChanging.classList.add("moon-mode");
+        break;
+      default:
+        break;
+    }
+
+    localStorage.setItem("storedModeLocal", newMode);
+    setMode(newMode);
+  };
+
   return (
-    <div className='absolute z-10 flex flex-col h-screen'>
-      <div className='fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl'>
+    <div className="absolute z-10 flex flex-col h-screen">
+      <div className="fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl">
         <SideBarIcon
           icon={<FiHome />}
-          text='Home'
-          targetId='home'
-          onClick={() => handleScroll('home')}
+          text="Home"
+          targetId="home"
+          onClick={() => handleScroll("home")}
         />
 
         <SideBarIcon
           icon={<FiTool />}
-          text='Skills'
-          targetId='skills'
-          onClick={() => handleScroll('skills')}
+          text="Skills"
+          targetId="skills"
+          onClick={() => handleScroll("skills")}
         />
 
         <SideBarIcon
           icon={<FiFolder />}
-          text='Projects'
-          targetId='projects'
-          onClick={() => handleScroll('projects')}
+          text="Projects"
+          targetId="projects"
+          onClick={() => handleScroll("projects")}
         />
 
         <SideBarIcon
           icon={<FiUser />}
-          text='Contact'
-          targetId='contact'
-          onClick={() => handleScroll('contact')}
+          text="Contact"
+          targetId="contact"
+          onClick={() => handleScroll("contact")}
         />
 
-        <div className='flex flex-col m-auto mb-1 w-fit  rounded-3xl bg-gray-50'>
-          <div className='sidebar-icon mode active mt-0' onClick={() => changeMode("sun")}>
+        <div className="flex flex-col m-auto mb-1 w-fit  rounded-3xl bg-gray-50">
+          <div
+            className={`sidebar-icon mode ${mode === "sun" ? "active" : ""}`}
+            onClick={() => changeMode("sun")}
+          >
             <FiSun />
           </div>
 
-          <div className='sidebar-icon mode' onClick={() => changeMode("dawn")}>
+          <div
+            className={`sidebar-icon mode ${mode === "dawn" ? "active" : ""}`}
+            onClick={() => changeMode("dawn")}
+          >
             <FiSunset />
           </div>
 
-          <div className='sidebar-icon mode mb-0' onClick={() => changeMode("moon")}>
+          <div
+            className={`sidebar-icon mode ${mode === "moon" ? "active" : ""}`}
+            onClick={() => changeMode("moon")}
+          >
             <FiMoon />
           </div>
         </div>
@@ -67,9 +101,9 @@ function SideBar() {
   );
 }
 
-const SideBarIcon = ({ icon, text = 'tooltip 💡', targetId, onClick }) => (
+const SideBarIcon = ({ icon, text = "tooltip 💡", targetId, onClick }) => (
   <a
-    className='group sidebar-icon'
+    className="group sidebar-icon"
     href={`#${targetId}`}
     onClick={(e) => {
       e.preventDefault();
@@ -77,27 +111,8 @@ const SideBarIcon = ({ icon, text = 'tooltip 💡', targetId, onClick }) => (
     }}
   >
     {icon}
-    <span className='sidebar-tooltip group-hover:scale-100'>{text}</span>
+    <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
   </a>
 );
-
-const changeMode= (mode) => {
-  switch (mode) {
-    case "sun":
-      
-      break;
-  
-    case "dawn":
-      
-      break;
-  
-    case "moon":
-      
-      break;
-
-    default:
-      break;
-  }
-}
 
 export default SideBar;

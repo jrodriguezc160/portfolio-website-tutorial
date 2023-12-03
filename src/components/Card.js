@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import profile from '../images/el-nano.jpg';
+import profile from '../images/profile.jpg';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function Card() {
@@ -45,7 +45,7 @@ function Card() {
 
   return (
     <div className='w-full pt-8'>
-      <div className='flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl'>
+      <div className='flex flex-col justify-center max-w-xs mx-auto bg-primary shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl'>
         <div className=''>
           <img
             src={profile}
@@ -55,10 +55,10 @@ function Card() {
         </div>
         <div className='text-center mt-5'>
           <p className='text-4xl sm:text-3xl text-gray-900 font-bold'>
-            Fernando Alonso
+            Javier Rodríguez
           </p>
           <p className='text-xs sm:text-base text-gray-600 pt-2 pb-4 px-5 w-auto inline-block border-b-2'>
-            "el Nano "
+            Web Developer + Designer
           </p>
 
           <div className='flex align-center justify-center mt-4'>
