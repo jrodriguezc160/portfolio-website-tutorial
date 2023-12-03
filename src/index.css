@@ -56,16 +56,16 @@
   .active {
     @apply bg-gray-100 shadow-sm;
   }
-}
 
-.dawn-mode {
-  @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
-}
+  .dawn-mode {
+    @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
+  }
 
-.moon-mode {
-  @apply bg-gray-800 text-white;
-}
+  .moon-mode {
+    @apply bg-gray-800 text-white;
+  }
 
-.sun-mode {
-  @apply bg-white text-black;
+  .sun-mode {
+    @apply bg-white text-black;
+  }
 }

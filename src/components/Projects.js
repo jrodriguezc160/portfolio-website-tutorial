@@ -19,7 +19,7 @@ function Projects() {
       </p>
 
       {/* Grid */}
-      <div class='grid grid-cols-1 gap-x-0 gap-y-6 sm:gap-x-6 sm:grid-cols-3 mt-8'>
+      <div className='grid grid-cols-1 gap-x-0 gap-y-6 sm:gap-x-6 sm:grid-cols-3 mt-8'>
         <div
           className='group relative h-56 w-full sm:colspan:1'
           data-aos='fade-right'
@@ -35,7 +35,7 @@ function Projects() {
                 src='https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp'
                 loading='lazy'
                 alt='Weather'
-                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+                className='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
               />
             </div>
 
@@ -62,7 +62,7 @@ function Projects() {
                 src='https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                 loading='lazy'
                 alt='Movies'
-                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+                className='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
               />
             </div>
 
@@ -89,7 +89,7 @@ function Projects() {
                 src='https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
                 loading='lazy'
                 alt='Portfolio'
-                class='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
+                className='absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105'
               />
             </div>
 
@@ -114,7 +114,7 @@ function Projects() {
                 src='https://eshop.macsales.com/blog/wp-content/uploads/2020/07/StickiesIcon-1-284x284.png'
                 loading='lazy'
                 alt='Sticky notes'
-                class='absolute inset-0 h-full w-auto mx-auto object-cover object-center transition duration-500 group-hover:scale-105'
+                className='absolute inset-0 h-full w-auto mx-auto object-cover object-center transition duration-500 group-hover:scale-105'
               />
             </div>
 

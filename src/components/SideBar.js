@@ -18,6 +18,12 @@ function SideBar({ mode, changeMode }) {
     }
   };
 
+  useEffect(() => {
+    const rootElement = document.getElementById("root");
+    rootElement.setAttribute("data-mode", mode);
+    console.log(`Changed to ${mode} mode`)
+  }, [mode]);
+
   return (
     <div className="absolute z-10 flex flex-col h-screen">
       <div className="fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl">
