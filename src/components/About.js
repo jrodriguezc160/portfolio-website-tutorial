@@ -7,7 +7,7 @@ function About({ mode }) {
     <div className="max-w-4xl mt-20 mx-auto">
       <p
         className={`text-2xl ${
-          mode !== "sun" ? "text-white" : "text-black"
+          mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-black"
         } md:text-4xl font-bold text-center flex items-center justify-center`}
       >
         Hey!&nbsp;
@@ -18,7 +18,7 @@ function About({ mode }) {
         />
       </p>
 
-      <p className={`text-base sm:xl text-center ${mode !== "sun" ? "text-gray-100" : "text-gray-600"} leading-relaxed mt-4`}>
+      <p className={`text-base sm:xl text-center ${mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-gray-100") : "text-gray-600"} leading-relaxed mt-4`}>
         I'm a passionate <b>web developer</b> and <b>graphic designer</b> that
         loves creating unique experiences on the internet. I combine my skills
         in design with my experience as a developer to craft beautiful and
@@ -27,7 +27,7 @@ function About({ mode }) {
 
       <ScrollIntoView selector="#tech" className="p-0 cursor-pointer">
         <div className="mx-auto p-10">
-          <FaChevronDown className="animate-bounce mx-auto text-3xl text-blue-500" />
+          <FaChevronDown className={`animate-bounce mx-auto text-3xl ${mode !== "sun" ? "text-white" : "text-blue-500"}`} />
         </div>
       </ScrollIntoView>
     </div>

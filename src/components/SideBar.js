@@ -59,21 +59,21 @@ function SideBar({ mode, changeMode }) {
           mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#181818] backdrop-blur-sm") : "bg-white"
         } gap-1`}>
           <div
-            className={`sidebar-icon mode ${mode === "sun" ? "active" : ""}`}
+            className={`sidebar-icon mode ${mode === "sun" ? "active" : "bg-transparent"}`}
             onClick={() => changeMode("sun")}
           >
             <FiSun />
           </div>
 
           <div
-            className={`sidebar-icon mode ${mode === "dawn" ? "active" : ""}`}
+            className={`sidebar-icon mode ${mode === "dawn" ? "active" : "bg-transparent"}`}
             onClick={() => changeMode("dawn")}
           >
             <FiSunset />
           </div>
 
           <div
-            className={`sidebar-icon mode ${mode === "moon" ? "active" : ""}`}
+            className={`sidebar-icon mode ${mode === "moon" ? "active" : "bg-transparent"}`}
             onClick={() => changeMode("moon")}
           >
             <FiMoon />

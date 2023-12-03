@@ -43,7 +43,7 @@
   }
 
   .dawn-mode .sidebar-icon {
-    @apply bg-[#a1e6cb90];
+    @apply bg-[#6BA49C] hover:bg-[#a1e6cb];
   }
 
   .sidebar-tooltip {
@@ -62,7 +62,7 @@
   }
 
   .dawn-mode .active {
-    @apply bg-[#5d8ea1] shadow-sm;
+    @apply bg-[#a1e6cb] shadow-sm;
   }
 
   .dawn-mode {
