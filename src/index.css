@@ -57,15 +57,25 @@
     @apply bg-gray-100 shadow-sm;
   }
 
+  .sun-mode {
+  }
+
   .dawn-mode {
-    @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
   }
 
   .moon-mode {
-    @apply bg-gray-800 text-white;
+    @apply text-white;
   }
+}
 
-  .sun-mode {
-    @apply bg-white text-black;
-  }
+.sun-mode {
+  @apply bg-white text-black;
+}
+
+.dawn-mode {
+  @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
+}
+
+.moon-mode {
+  @apply bg-gray-800 text-white;
 }
