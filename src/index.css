@@ -42,6 +42,10 @@
      hover:text-gray-700 rounded-3xl hover:rounded-[13px] transition-all duration-300 cursor-pointer;
   }
 
+  .dawn-mode .sidebar-icon {
+    @apply bg-[#a1e6cb90];
+  }
+
   .sidebar-tooltip {
     @apply absolute w-auto px-3 py-2 m-0 min-w-max left-14 rounded-md shadow-md
     text-gray-700 bg-gray-200 
@@ -57,10 +61,10 @@
     @apply bg-gray-100 shadow-sm;
   }
 
-  .dawn .active {
+  .dawn-mode .active {
     @apply bg-[#5d8ea1] shadow-sm;
   }
-  
+
   .dawn-mode {
     @apply text-white;
   }
@@ -72,8 +76,8 @@
 
 .dawn-mode {
   background: #34e89e;
-  background: -webkit-linear-gradient(to right, #0f3443, #34e89e); 
-  background: linear-gradient(to right, #0f3443, #34e89e); 
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
+  background: linear-gradient(to right, #0f3443, #34e89e);
 }
 
 .moon-mode {

@@ -21,9 +21,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-[#DA70D675] hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-[#DA70D675] hover:shadow-md "
+              : "bg-white hover:shadow-[#DA70D675] hover:shadow-xl "
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaFigma color="orchid" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">
@@ -36,9 +36,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-slate-200 hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-slate-200 hover:shadow-md "
+              : "bg-white hover:shadow-slate-200 hover:shadow-xl "
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaGithub color="slategrey" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">
@@ -51,9 +51,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-orange-200 hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-orange-200 hover:shadow-md"
+              : "bg-white hover:shadow-orange-200 hover:shadow-xl"
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaHtml5 color="darkorange" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">
@@ -66,9 +66,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-blue-200 hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+              : "bg-white hover:shadow-blue-200 hover:shadow-xl"
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaCss3 color="blue" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">
@@ -81,9 +81,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-yellow-200 hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-yellow-200 hover:shadow-md"
+              : "bg-white hover:shadow-yellow-200 hover:shadow-xl"
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaJs color="gold" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">
@@ -96,9 +96,9 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm"
-              : "bg-white"
-          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:shadow-sky-200 hover:shadow-xl hover:scale-110`}
+                : "bg-[#181818] backdrop-blur-sm hover:shadow-sky-200 hover:shadow-xl"
+              : "bg-white hover:shadow-sky-200 hover:shadow-xl"
+          } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
           <FaReact color="skyblue" className="mx-auto text-4xl" />
           <p className="mt-6 text-xl sm:text-2xl font-semibold text-center">

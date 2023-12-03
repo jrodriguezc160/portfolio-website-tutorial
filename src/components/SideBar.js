@@ -55,7 +55,9 @@ function SideBar({ mode, changeMode }) {
           onClick={() => handleScroll("contact")}
         />
 
-        <div className="flex flex-col m-auto mb-1 w-fit rounded-3xl bg-gray-50 gap-1">
+        <div className={`flex flex-col m-auto mb-1 w-fit rounded-3xl ${
+          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#181818] backdrop-blur-sm") : "bg-white"
+        } gap-1`}>
           <div
             className={`sidebar-icon mode ${mode === "sun" ? "active" : ""}`}
             onClick={() => changeMode("sun")}
