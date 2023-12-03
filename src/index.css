@@ -57,13 +57,7 @@
     @apply bg-gray-100 shadow-sm;
   }
 
-  .sun-mode {
-  }
-
   .dawn-mode {
-  }
-
-  .moon-mode {
     @apply text-white;
   }
 }
@@ -73,9 +67,9 @@
 }
 
 .dawn-mode {
-  @apply bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500;
+  @apply bg-[#FFA33C] bg-gradient-to-r from-[#3D30A2] via-[#B15EFF];
 }
 
 .moon-mode {
-  @apply bg-gray-800 text-white;
+  @apply bg-[#080808] text-white;
 }

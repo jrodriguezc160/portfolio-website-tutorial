@@ -2,10 +2,14 @@ import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import ScrollIntoView from "react-scroll-into-view";
 
-function About() {
+function About({ mode }) {
   return (
     <div className="max-w-4xl mt-20 mx-auto">
-      <p className="text-2xl text-black md:text-4xl font-bold text-center flex items-center justify-center">
+      <p
+        className={`text-2xl ${
+          mode !== "sun" ? "text-white" : "text-black"
+        } md:text-4xl font-bold text-center flex items-center justify-center`}
+      >
         Hey!&nbsp;
         <img
           src="https://emojigraph.org/media/apple/waving-hand-light-skin-tone_1f44b-1f3fb.png"
@@ -14,7 +18,7 @@ function About() {
         />
       </p>
 
-      <p className="text-base sm:xl text-center text-gray-600 leading-relaxed mt-4">
+      <p className={`text-base sm:xl text-center ${mode !== "sun" ? "text-gray-300" : "text-gray-600"} leading-relaxed mt-4`}>
         I'm a passionate <b>web developer</b> and <b>graphic designer</b> that
         loves creating unique experiences on the internet. I combine my skills
         in design with my experience as a developer to craft beautiful and

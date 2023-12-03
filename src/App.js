@@ -32,22 +32,14 @@ function App() {
   }, []);
 
   return (
-    <div
-      className={`min-h-screen pb-10 sm:px-5 bg-gray-100 ${
-        mode === "dawn"
-          ? "dawn-mode"
-          : mode === "moon"
-          ? "moon-mode"
-          : "sun-mode"
-      }`}
-    >
+    <div className={`min-h-screen pb-10 sm:px-5 bg-gray-100 ${mode}-mode`}>
       <SideBar mode={mode} changeMode={changeMode} />
       <div data-aos="fade-down" data-aos-duration="800" id="home">
-        <Card />
+        <Card mode={mode} />
       </div>
 
       <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-        <About />
+        <About mode={mode} />
       </div>
 
       <div
@@ -56,17 +48,17 @@ function App() {
         className="h-full"
         id="skills"
       >
-        <Skills />
+        <Skills mode={mode} />
       </div>
 
       <div data-aos="fade-up" data-aos-duration="800" id="projects">
-        <Projects />
+        <Projects mode={mode} />
       </div>
 
       <div data-aos="fade-up" data-aos-duration="800" id="contact">
-        <ContactMe />
+        <ContactMe mode={mode} />
       </div>
-      <Footer />
+      <Footer mode={mode} />
     </div>
   );
 }
