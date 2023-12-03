@@ -18,31 +18,6 @@ function SideBar({ mode, changeMode }) {
     }
   };
 
-  const changeMode = (newMode, setMode) => {
-    console.log("Changing mode...");
-    const elementsChanging = document.querySelector("[data-mode]");
-
-    switch (newMode) {
-      case "sun":
-        elementsChanging.classList.remove("dawn-mode", "moon-mode");
-        elementsChanging.classList.add("sun-mode");
-        break;
-      case "dawn":
-        elementsChanging.classList.remove("sun-mode", "moon-mode");
-        elementsChanging.classList.add("dawn-mode");
-        break;
-      case "moon":
-        elementsChanging.classList.remove("sun-mode", "dawn-mode");
-        elementsChanging.classList.add("moon-mode");
-        break;
-      default:
-        break;
-    }
-
-    localStorage.setItem("storedModeLocal", newMode);
-    setMode(newMode);
-  };
-
   return (
     <div className="absolute z-10 flex flex-col h-screen">
       <div className="fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col bg-white shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl">
@@ -74,7 +49,7 @@ function SideBar({ mode, changeMode }) {
           onClick={() => handleScroll("contact")}
         />
 
-        <div className="flex flex-col m-auto mb-1 w-fit  rounded-3xl bg-gray-50">
+        <div className="flex flex-col m-auto mb-1 w-fit rounded-3xl bg-gray-50 gap-1">
           <div
             className={`sidebar-icon mode ${mode === "sun" ? "active" : ""}`}
             onClick={() => changeMode("sun")}

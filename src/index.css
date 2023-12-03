@@ -50,7 +50,7 @@
   }
 
   .mode {
-    @apply bg-transparent;
+    @apply bg-transparent p-0 m-0;
   }
 
   .active {
