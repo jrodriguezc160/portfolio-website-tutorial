@@ -21,6 +21,7 @@ function App() {
 
   const changeMode = (newMode) => {
     setMode(newMode);
+    console.log("Cambiando al modo " + newMode);
     localStorage.setItem("storedModeLocal", newMode);
   };
 
