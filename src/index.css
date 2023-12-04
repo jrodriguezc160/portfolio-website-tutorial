@@ -43,7 +43,7 @@
   }
 
   .dawn-mode .sidebar-icon {
-    @apply bg-[#6BA49C] hover:bg-[#a1e6cb];
+    @apply bg-[#6BA49C] hover:bg-[#a1e6cb] text-gray-800;
   }
 
   .sidebar-tooltip {
@@ -81,5 +81,14 @@
 }
 
 .moon-mode {
-  @apply bg-[#080808] text-white;
+  position: relative; /* Added position:relative for stacking context */
+  background-image: url("https://4kwallpapers.com/images/wallpapers/windows-11-dark-mode-blue-stock-official-3840x2400-5630.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2; /* Move the pseudo-element to the background */
 }
+
+.moon-mode .app {
+  filter: blur(80px);
+}
+

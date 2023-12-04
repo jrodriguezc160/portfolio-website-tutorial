@@ -35,10 +35,10 @@ function Projects({ mode = "sun" }) {
           >
             <div className="absolute inset-4 mb-8 rounded-md overflow-hidden">
               <img
-                src="https://emojis.wiki/thumbs/emojis/sun-behind-cloud.webp"
+                src="https://emojitool.com/img/apple/ios-16.4/sun-behind-cloud-216.png"
                 loading="lazy"
                 alt="Weather"
-                className="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105"
+                className="absolute inset-0 h-full w-auto mx-auto object-cover object-center transition duration-500 group-hover:scale-105"
               />
             </div>
 
@@ -58,7 +58,13 @@ function Projects({ mode = "sun" }) {
             href="https://jrodriguezc160.github.io/react-movie-searcher"
             target="_blank"
             rel="noreferrer"
-            className="h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg"
+            className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
+              mode !== "sun"
+                ? mode === "dawn"
+                  ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
+                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                : "bg-white hover:shadow-blue-200 hover:shadow-xl"
+            }`}
           >
             <div className="absolute inset-4 mb-8 rounded-md overflow-hidden">
               <img
@@ -85,7 +91,13 @@ function Projects({ mode = "sun" }) {
             href="https://jrodriguezc160.github.io/react-movie-searcher"
             target="_blank"
             rel="noreferrer"
-            className="h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg"
+            className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
+              mode !== "sun"
+                ? mode === "dawn"
+                  ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
+                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                : "bg-white hover:shadow-blue-200 hover:shadow-xl"
+            }`}
           >
             <div className="absolute inset-4 mb-8 rounded-md overflow-hidden">
               <img
@@ -110,7 +122,13 @@ function Projects({ mode = "sun" }) {
         >
           <a
             href="youtube.com"
-            className="h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl bg-white shadow-lg"
+            className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
+              mode !== "sun"
+                ? mode === "dawn"
+                  ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
+                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                : "bg-white hover:shadow-blue-200 hover:shadow-xl"
+            }`}
           >
             <div className="absolute inset-4 mb-8 rounded-md overflow-hidden">
               <img

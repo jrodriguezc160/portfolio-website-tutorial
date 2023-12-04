@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <div className={`min-h-screen pb-10 sm:px-5 bg-gray-100 ${mode}-mode`}>
+    <div className={`min-h-screen pb-10 sm:px-5 bg-gray-100 ${mode}-mode app`}>
       <SideBar mode={mode} changeMode={changeMode} />
       <div data-aos="fade-down" data-aos-duration="800" id="home">
         <Card mode={mode} />

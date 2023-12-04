@@ -47,7 +47,7 @@ function Card({ mode = "sun"}) {
     <div className="w-full pt-8">
       <div
         className={`flex flex-col justify-center max-w-xs mx-auto ${
-          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#181818] backdrop-blur-sm") : "bg-white"
+          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[gray-900] hover:bg-[#256CFE] backdrop-blur-sm") : "bg-white"
         } shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl`}
       >
         <div className="">
