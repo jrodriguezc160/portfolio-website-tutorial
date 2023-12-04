@@ -89,6 +89,5 @@
 }
 
 .moon-mode .app {
-  filter: blur(80px);
+  filter: blur(20px);
 }
-
