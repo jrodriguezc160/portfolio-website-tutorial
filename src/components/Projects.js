@@ -11,7 +11,7 @@ function Projects({ mode = "sun" }) {
 
   return (
     <div className="max-w-4xl mx-auto justify-center py-12" id="tech">
-      <p className="text-2xl text-black text-center sm:text-4xl pt-4 font-bold">
+      <p className={`text-4xl text-black text-center pt-24 ${mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-gray-900"} font-bold`}>
         Projects
       </p>
 
@@ -29,7 +29,7 @@ function Projects({ mode = "sun" }) {
               mode !== "sun"
                 ? mode === "dawn"
                   ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                  : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
                 : "bg-white hover:shadow-blue-200 hover:shadow-xl"
             }`}
           >
@@ -62,7 +62,7 @@ function Projects({ mode = "sun" }) {
               mode !== "sun"
                 ? mode === "dawn"
                   ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                  : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
                 : "bg-white hover:shadow-blue-200 hover:shadow-xl"
             }`}
           >
@@ -95,7 +95,7 @@ function Projects({ mode = "sun" }) {
               mode !== "sun"
                 ? mode === "dawn"
                   ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                  : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
                 : "bg-white hover:shadow-blue-200 hover:shadow-xl"
             }`}
           >
@@ -126,7 +126,7 @@ function Projects({ mode = "sun" }) {
               mode !== "sun"
                 ? mode === "dawn"
                   ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                  : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                  : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
                 : "bg-white hover:shadow-blue-200 hover:shadow-xl"
             }`}
           >

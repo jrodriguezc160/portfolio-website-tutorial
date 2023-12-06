@@ -21,7 +21,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-[#DA70D675] hover:shadow-md "
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-[#DA70D675] hover:shadow-xl "
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
@@ -36,7 +36,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-slate-200 hover:shadow-md "
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-slate-200 hover:shadow-xl "
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
@@ -51,7 +51,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-orange-200 hover:shadow-md"
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-orange-200 hover:shadow-xl"
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
@@ -66,7 +66,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-blue-200 hover:shadow-xl"
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
@@ -81,7 +81,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-yellow-200 hover:shadow-md"
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-yellow-200 hover:shadow-xl"
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
@@ -96,7 +96,7 @@ function Skills({ mode = "sun" }) {
             mode !== "sun"
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#a1e6cb] hover:shadow-none"
-                : "bg-[#181818] backdrop-blur-sm hover:shadow-sky-200 hover:shadow-xl"
+                : "bg-[#061E4690] backdrop-blur-sm hover:shadow-[#125EFE30] hover:shadow-lg hover:bg-[#09296990] text-gray-100"
               : "bg-white hover:shadow-sky-200 hover:shadow-xl"
           } shadow-lg rounded-xl sm:w-52 transition ease-in-out duration-700 hover:scale-110`}
         >
