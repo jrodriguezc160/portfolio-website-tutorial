@@ -7,7 +7,7 @@ function About({ mode }) {
     <div className="max-w-4xl mt-20 mx-auto">
       <p
         className={`text-2xl ${
-          mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-black"
+          mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-gray-100") : "text-black"
         } md:text-4xl font-bold text-center flex items-center justify-center`}
       >
         Hey!&nbsp;

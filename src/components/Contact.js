@@ -11,7 +11,7 @@ export default function ContactMe({ mode }) {
               ? mode === "dawn"
                 ? "bg-[#a1e6cb90] hover:bg-[#000] hover:shadow-none"
                 : "bg-[#181818] backdrop-blur-sm hover:shadow-blue-200 hover:shadow-md"
-              : "bg-white hover:shadow-blue-200 hover:shadow-xl hover:bg-blue-700 "
+              : "bg-black hover:shadow-blue-200 hover:shadow-xl hover:bg-blue-700 "
           } text-white text-base md:text-xl py-4 px-8 cursor-pointer transition duration-500 hover:scale-105 hover:shadow-xl`}
         >
           <div className="flex flex-row items-center">

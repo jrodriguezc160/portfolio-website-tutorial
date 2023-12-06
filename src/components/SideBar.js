@@ -26,7 +26,7 @@ function SideBar({ mode, changeMode }) {
 
   return (
     <div className="absolute z-10 flex flex-col h-screen">
-      <div className={`fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col ${mode !== "sun" ? (mode === "dawn" ? "bg-[#214d5e]" : "bg-gray-900") : "bg-white"} shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl`}>
+      <div className={`fixed md:left-4 left-auto md:top-4 bottom-4 md:w-12 w-[90%] flex md:flex-col ${mode !== "sun" ? (mode === "dawn" ? "bg-[#214d5e]" : "bg-[#256CFE10]") : "bg-white"} shadow-lg transition-all duration-300 rounded-3xl hover:rounded-2xl`}>
         <SideBarIcon
           icon={<FiHome />}
           text="Home"
@@ -56,7 +56,7 @@ function SideBar({ mode, changeMode }) {
         />
 
         <div className={`flex flex-col m-auto mb-1 w-fit rounded-3xl ${
-          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#181818] backdrop-blur-sm") : "bg-white"
+          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#061E46] backdrop-blur-sm") : "bg-white"
         } gap-1`}>
           <div
             className={`sidebar-icon mode ${mode === "sun" ? "active" : "bg-transparent"}`}

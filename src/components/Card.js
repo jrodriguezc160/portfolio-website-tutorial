@@ -47,7 +47,7 @@ function Card({ mode = "sun"}) {
     <div className="w-full pt-8">
       <div
         className={`flex flex-col justify-center max-w-xs mx-auto ${
-          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[gray-900] hover:bg-[#256CFE] backdrop-blur-sm") : "bg-white"
+          mode !== "sun" ? (mode === "dawn" ? "bg-[#a1e6cb90]" : "bg-[#256CFE25] backdrop-blur-sm shadow-[#256CFE10]") : "bg-white"
         } shadow-xl rounded-xl p-5 card-selector transition-shadow duration-500 hover:shadow-2xl`}
       >
         <div className="">
@@ -61,7 +61,7 @@ function Card({ mode = "sun"}) {
           <p className={`text-4xl sm:text-3xl ${mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-gray-900"} font-bold`}>
             Javier Rodríguez
           </p>
-          <p className={`text-xs sm:text-base ${mode !== "sun" ? (mode === "dawn" ? "text-gray-800 border-emerald-300" : "text-gray-600") : "text-gray-600"} pt-2 pb-4 px-5 w-auto inline-block border-b-2`}>
+          <p className={`text-xs sm:text-base ${mode !== "sun" ? (mode === "dawn" ? "text-gray-800 border-emerald-300" : "text-gray-400") : "text-gray-600"} pt-2 pb-4 px-5 w-auto inline-block border-b-2`}>
             Web Developer + Designer
           </p>
 
