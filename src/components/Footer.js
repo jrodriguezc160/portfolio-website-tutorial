@@ -41,11 +41,11 @@ function Footer({ mode }) {
         <p className=" mb-4">
           Made with{" "}
           <span className="mr-2" role="link" aria-label="heart">
-            💙
+            {mode !== "dawn" ? "💙" : "💚"}
           </span>
           by{" "}
           <a
-            className="text-blue-500 hover:underline"
+            className={`${mode !== "dawn" ? "text-blue-500" : "text-emerald-200"} hover:underline`}
             href="mailto:jrcortes02102005@gmail.com"
           >
             Javier Rodríguez Cortés

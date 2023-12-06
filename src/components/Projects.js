@@ -11,7 +11,15 @@ function Projects({ mode = "sun" }) {
 
   return (
     <div className="max-w-4xl mx-auto justify-center py-12" id="tech">
-      <p className={`text-4xl text-black text-center pt-24 ${mode !== "sun" ? (mode === "dawn" ? "text-gray-900" : "text-white") : "text-gray-900"} font-bold`}>
+      <p
+        className={`text-4xl text-black text-center pt-24 ${
+          mode !== "sun"
+            ? mode === "dawn"
+              ? "text-gray-900"
+              : "text-white"
+            : "text-gray-900"
+        } font-bold`}
+      >
         Projects
       </p>
 
@@ -24,7 +32,9 @@ function Projects({ mode = "sun" }) {
           data-aos-delay="200"
         >
           <a
-            href="youtube.com"
+            href="https://github.com/jrodriguezc160/weather-app-react"
+            target="_blank"
+            rel="noreferrer"
             className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
               mode !== "sun"
                 ? mode === "dawn"
@@ -88,7 +98,7 @@ function Projects({ mode = "sun" }) {
           data-aos-delay="200"
         >
           <a
-            href="https://jrodriguezc160.github.io/react-movie-searcher"
+            href="https://github.com/jrodriguezc160/portfolio-website-tutorial"
             target="_blank"
             rel="noreferrer"
             className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
@@ -121,7 +131,9 @@ function Projects({ mode = "sun" }) {
           data-aos-delay="200"
         >
           <a
-            href="youtube.com"
+            href="https://github.com/jrodriguezc160/react-notes-app"
+            target="_blank"
+            rel="noreferrer"
             className={`h-full w-full flex items-end transition duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden rounded-xl shadow-lg  ${
               mode !== "sun"
                 ? mode === "dawn"
